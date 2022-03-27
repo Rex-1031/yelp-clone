@@ -3,7 +3,9 @@ const express = require('express');
 
 const app = express();
 
-app.get('/restaurants')
+app.get('/getRestaurants', (req, res)=>{
+    console.log('get all restaurants')
+})
 
 const PORT  = process.env.PORT || 3000;
 app.listen(3000, ()=>{
